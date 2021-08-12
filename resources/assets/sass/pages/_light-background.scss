@@ -1,0 +1,217 @@
+/*
+** Light Background Section - .ls
+*/
+
+.ls {
+  background-color: #fff;
+  color: #7f7f7f;
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #1f2732;
+  }
+
+  h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    color: inherit;
+  }
+
+  h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+    color: $color-primary;
+  }
+
+  .btn-maincolor:hover, .btn-maincolor2:hover, .btn-maincolor3:hover, .btn-darkgrey:hover, .btn-outline-maincolor:hover, .btn-outline-maincolor2:hover, .btn-outline-maincolor3:hover, .btn-outline-darkgrey:hover {
+    color: #fff;
+  }
+
+  .btn-outline-maincolor:hover {
+    background-color: $color-primary;
+  }
+
+  .btn-maincolor:hover {
+    background-color: #fff;
+    color: $color-primary;
+  }
+
+  .btn-outline-maincolor2:hover {
+    background-color: #a0ce4e;
+  }
+
+  .btn-maincolor2:hover {
+    background-color: #fff;
+    color: #a0ce4e;
+  }
+
+  .btn-outline-maincolor3:hover {
+    background-color: #00bea3;
+  }
+
+  .btn-maincolor3:hover {
+    background-color: #fff;
+    color: #00bea3;
+  }
+
+  .btn-outline-darkgrey:hover {
+    background-color: $color-primary;
+  }
+
+  .btn-darkgrey:hover {
+    background-color: $color-primary;
+    border-color: $color-primary;
+  }
+
+  .links-maincolor a:hover {
+    opacity: 0.7;
+  }
+
+  &.ms {
+    background-color: #f4f4f5;
+    color: #6e6e6e;
+
+    .links-grey a {
+      color: #6e6e6e;
+    }
+
+    .hero-bg {
+      background-color: #fff;
+
+      hr {
+        background-color: #e1e1e1;
+      }
+    }
+
+    hr {
+      background-color: #fff;
+    }
+
+    input {
+      &[type="text"], &[type="email"], &[type="url"], &[type="password"], &[type="search"], &[type="tel"], &[type="number"] {
+        background-color: #fff;
+      }
+    }
+
+    textarea, select, .form-control {
+      background-color: #fff;
+    }
+
+    .hero-bg {
+      input {
+        &[type="text"], &[type="email"], &[type="url"], &[type="password"], &[type="search"], &[type="tel"], &[type="number"] {
+          background-color: #f2f2f2;
+          border-color: #e1e1e1;
+        }
+      }
+
+      textarea, select, .form-control {
+        background-color: #f2f2f2;
+        border-color: #e1e1e1;
+      }
+    }
+
+    td, th, .bordered {
+      border-color: #d4d4d4;
+    }
+
+    .btn-secondary {
+      border-color: #fff;
+
+      &:hover {
+        background-color: #e3e3e3;
+        border-color: #e3e3e3;
+      }
+    }
+  }
+
+  .color-icon.bg-icon {
+    background-color: #fff;
+  }
+
+  .pricing-plan [class*='btn-outline-'] {
+    background-color: #fff;
+
+    &:hover {
+      background-color: $color-primary;
+    }
+  }
+
+  &.ms {
+    .nav-tabs > li.active > a {
+      background-color: #fff;
+      border-color: #fff;
+
+      &:hover, &:focus {
+        background-color: #fff;
+        border-color: #fff;
+      }
+    }
+
+    .tab-content {
+      background-color: #fff;
+
+      .bordered {
+        border-color: #e6e6e6;
+      }
+
+      &.no-border {
+        background-color: transparent;
+      }
+
+      .form-control {
+        background-color: #f2f2f2;
+      }
+    }
+
+    .vertical-tabs .nav > li {
+      > a {
+        background-color: #fff;
+
+        &:hover {
+          background-color: #323232;
+        }
+      }
+
+      &.active > a {
+        background-color: #323232;
+      }
+    }
+
+    .panel-title > a {
+      background-color: #323232;
+
+      &.collapsed {
+        background-color: #fff;
+      }
+    }
+
+    .hero-bg .panel-title > a {
+      border: 1px solid #e1e1e1;
+    }
+
+    .panel-title > a {
+      &.collapsed:hover, &:hover {
+        background-color: #323232;
+      }
+    }
+
+    .pagination {
+      a, span {
+        background-color: #fff;
+        border-color: #fff;
+      }
+    }
+
+    .breadcrumb {
+      color: #808080;
+
+      a {
+        color: #676767;
+
+        &:hover {
+          color: $color-primary;
+        }
+      }
+    }
+
+    [class*='btn-outline-']:not(:hover) {
+      background-color: #f2f2f2;
+    }
+  }
+}

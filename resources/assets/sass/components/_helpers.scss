@@ -1,0 +1,345 @@
+
+/*
+** Helper Utilities
+*/
+/* layout */
+
+.clear, .clearfix {
+  clear: both;
+}
+
+.round {
+  border-radius: 50%;
+}
+
+.text-normal {
+  text-transform: none;
+}
+
+/* paddings for .*-bg, .bg-* and .bordered */
+
+.p-big, .p-normal {
+  padding: 40px 45px;
+}
+
+@media (min-width: 1200px) {
+  .p-big {
+    padding: 55px 60px;
+  }
+}
+
+.p-small {
+  padding: 30px 35px;
+}
+
+.cover-before, .cover-after {
+  overflow: hidden;
+}
+
+.cover-before, .cover-after, .cover-before > *, .cover-after > * {
+  position: relative;
+  z-index: 2;
+}
+
+.cover-before:before, .cover-after:after {
+  bottom: 0;
+  content: "";
+  display: block;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.top-corner {
+  left: 0;
+  line-height: 1;
+  position: absolute;
+  top: 0;
+}
+
+/* text helpers */
+
+.fs-12 {
+  font-size: 12px;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.fs-24 {
+  font-size: 24px;
+}
+
+.fs-28 {
+  font-size: 28px;
+}
+
+.fs-32 {
+  font-size: 32px;
+}
+
+.fs-36 {
+  font-size: 36px;
+}
+
+.fs-40 {
+  font-size: 40px;
+}
+
+.fs-56 {
+  font-size: 56px;
+}
+
+.fw-100 {
+  font-weight: 100;
+}
+
+.fw-300, .thin {
+  font-weight: 300;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-700, .bolder {
+  font-weight: 700;
+}
+
+.fw-900, .bold {
+  font-weight: 900;
+}
+
+.dropcap {
+  float: left;
+  font-size: 110px;
+  font-weight: 900;
+  line-height: 0.9;
+  margin: 0 15px 0 0;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1199px) {
+  .dropcap {
+    font-size: 50px;
+    line-height: 1.1;
+    margin-right: 15px;
+  }
+}
+
+/*alignment helpers*/
+
+.d-table {
+  border-collapse: collapse;
+  display: table;
+  height: 100%;
+  margin: auto;
+  min-width: 100%;
+}
+
+.d-table-cell {
+  box-sizing: border-box;
+  display: table-cell;
+  float: none;
+  overflow: hidden;
+  vertical-align: middle;
+  zoom: 1;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+}
+
+.overflow-visible {
+  overflow: visible;
+  position: relative;
+  z-index: 2;
+}
+
+.z-index-2 {
+  z-index: 2;
+}
+
+/* borders, colors and backgrounds */
+
+.light-bg {
+  background-color: #fff;
+}
+
+.hero-bg {
+  background-color: #f5f5f5;
+}
+
+.muted-bg {
+  background-color: rgba(50, 50, 50, 0.06);
+}
+
+.response, .color-main {
+  border-color: $color-primary;
+  color: $color-primary !important;
+}
+
+.color-main2 {
+  border-color: #a0ce4e;
+  color: #a0ce4e !important;
+}
+
+.color-main3 {
+  border-color: #00bea3;
+  color: #00bea3 !important;
+}
+
+.color-main4 {
+  border-color: #f1894c;
+  color: #f1894c !important;
+}
+
+.color-dark {
+  border-color: #252525;
+  color: #252525;
+}
+
+.color-darkgrey {
+  border-color: #323232;
+  color: #323232;
+}
+
+.color-success {
+  color: #4db19e;
+}
+
+.color-info {
+  color: #007ebd;
+}
+
+.color-light {
+  color: #fff;
+}
+
+.color-warning {
+  color: #eeb269;
+}
+
+.required, .color-danger {
+  color: #dc5753;
+}
+
+.bordered {
+  border: 1px solid #e1e1e1;
+}
+
+.box-shadow {
+  border-color: transparent;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.links-maincolor a {
+  color: $color-primary;
+}
+
+.links-maincolor2 a {
+  color: #a0ce4e;
+}
+
+.links-maincolor3 a {
+  color: #00bea3;
+}
+
+.links-grey a {
+  color: #808080;
+
+  &:hover {
+    color: $color-primary;
+  }
+}
+
+.links-darkgrey a {
+  color: #323232;
+
+  &:hover {
+    color: $color-primary;
+  }
+}
+
+.bg-maincolor {
+  background-color: $color-primary;
+}
+
+.bg-maincolor2 {
+  background-color: #a0ce4e;
+}
+
+.bg-maincolor3 {
+  background-color: #00bea3;
+}
+
+.bg-maincolor4 {
+  background-color: #f1894c;
+}
+
+.bg-dark {
+  background-color: #252525;
+}
+
+.bg-darkblue {
+  background-color: #253138;
+  color: #fff;
+}
+
+.bg-darkgrey {
+  background-color: #323232;
+  color: #fff;
+}
+
+.bg-success {
+  background-color: #4db19e !important;
+}
+
+.bg-info {
+  background-color: #007ebd !important;
+}
+
+.bg-warning {
+  background-color: #eeb269 !important;
+}
+
+.bg-danger {
+  background-color: #dc5753 !important;
+}
+
+[class*='bg-'] {
+  color: #fff;
+
+  a, h1, h2, h3, h4, h5, h6 {
+    color: #fff;
+  }
+}
+
+/*padding for inline elements with theme backgrounds*/
+
+span {
+  &[class*='bg-'], &.bordered, &.light-bg, &.hero-bg, &.muted-bg {
+    padding-left: 0.37em;
+    padding-right: 0.37em;
+  }
+}

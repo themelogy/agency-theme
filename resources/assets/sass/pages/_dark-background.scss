@@ -1,0 +1,217 @@
+
+/* dark background section - .ds.ms */
+
+/* dark section blue - .ds.bs */
+
+/*
+** Color Background Section - .cs
+*/
+
+.cs {
+  &.cs2 {
+    background-color: #a0ce4e;
+
+    .color-main {
+      color: $color-primary;
+    }
+  }
+
+  &.cs3 {
+    background-color: #00bea3;
+
+    .color-main {
+      color: $color-primary;
+    }
+  }
+
+  &.gs {
+    background-color: #aaa6a7;
+  }
+
+  &.cs-success {
+    background-color: #4db19e;
+  }
+
+  &.cs-info {
+    background-color: #007ebd;
+  }
+
+  &.cs-warning {
+    background-color: #eeb269;
+  }
+
+  &.cs-danger {
+    background-color: #dc5753;
+  }
+
+  background-color: $color-primary;
+  color: #fff;
+
+  h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    color: #fff;
+  }
+
+  h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  a:not(.btn) {
+    color: #fff;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  blockquote, .blockquote {
+    border-color: #ff7ca1;
+  }
+
+  hr {
+    border-color: rgba(255, 255, 255, 0.15);
+  }
+
+  pre {
+    color: #fff;
+  }
+
+  .hero-bg {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .bordered {
+    border-color: rgba(255, 255, 255, 0.15);
+  }
+
+  &.s-bordertop:before, &.s-borderbottom:after, &.s-bordertop-container .container:before, &.s-borderbottom-container .container:after, &.s-bordered-columns [class*='col-'] + [class*='col-']:before {
+    background-color: rgba(255, 255, 255, 0.15);
+  }
+
+  .links-darkgrey a, .links-grey a {
+    color: #fff;
+    opacity: 0.9;
+  }
+
+  .links-darkgrey a:hover, .links-grey a:hover {
+    color: #fff;
+    opacity: 1;
+  }
+
+  .color-dark {
+    border-color: #fff;
+    color: #fff;
+  }
+
+  .color-darkgrey {
+    border-color: #323232;
+    color: #323232;
+  }
+
+  .response, .color-main {
+    color: #fff;
+  }
+
+  input {
+    &[type="text"], &[type="email"], &[type="url"], &[type="password"], &[type="search"], &[type="tel"], &[type="number"] {
+      background-color: #fff;
+      border-color: #fff;
+      color: #323232;
+    }
+  }
+
+  textarea, select {
+    background-color: #fff;
+    border-color: #fff;
+    color: #323232;
+  }
+
+  .form-control {
+    background-color: #fff;
+    border-color: #fff;
+    color: #323232;
+
+    &:focus {
+      border-color: rgba(255, 255, 255, 0.5);
+    }
+
+    &:-moz-placeholder, &::-moz-placeholder {
+      color: #323232;
+      opacity: 1;
+    }
+
+    &:-ms-input-placeholder, &::-webkit-input-placeholder {
+      color: #323232;
+    }
+
+    &:focus {
+      &:-moz-placeholder, &::-moz-placeholder, &:-ms-input-placeholder, &::-webkit-input-placeholder {
+        color: transparent;
+      }
+    }
+  }
+
+  .btn-maincolor {
+    background-color: #fff;
+    color: #323232;
+  }
+
+  .btn-outline-maincolor {
+    border-color: #fff;
+    color: #fff;
+  }
+
+  .btn-maincolor:hover, .btn-maincolor2:hover, .btn-maincolor3:hover, .btn-darkgrey:hover, .btn-outline-maincolor:hover, .btn-outline-maincolor2:hover, .btn-outline-maincolor3:hover, .btn-outline-darkgrey:hover {
+    color: #fff;
+  }
+
+  .btn-outline-maincolor:hover, .btn-maincolor:hover {
+    background-color: #ff1657;
+    border-color: #ff1657;
+  }
+
+  .btn-outline-maincolor2:hover, .btn-maincolor2:hover {
+    background-color: #87b633;
+  }
+
+  .btn-outline-maincolor3:hover, .btn-maincolor3:hover {
+    background-color: #008b77;
+  }
+
+  .btn-outline-darkgrey:hover, .btn-darkgrey:hover {
+    background-color: #191919;
+    border-color: #191919;
+  }
+
+  a {
+    &.fa {
+      border-color: rgba(255, 255, 255, 0.15);
+      color: #fff;
+    }
+
+    &.bg-icon {
+      background-color: rgba(255, 255, 255, 0.17);
+    }
+  }
+
+  .color-icon.bg-icon {
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+
+  a.fa.color-bg-icon:hover {
+    background-color: #323232;
+  }
+
+  .btn-action {
+    background-color: #fff;
+
+    i {
+      color: #323232;
+    }
+
+    &:hover i {
+      opacity: 0.7;
+    }
+  }
+}
+
+/* color section grey - .cs.gs */

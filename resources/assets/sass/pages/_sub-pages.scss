@@ -1,0 +1,63 @@
+/*
+** Subpages
+*/
+/*
+** 404
+*/
+
+.error-404 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -60px;
+
+  a.btn:hover {
+    background-color: transparent;
+  }
+
+  .page-header {
+    h3 {
+      font-family: "Poppins", sans-serif;
+      font-size: 100px;
+      line-height: 1;
+      margin: 0;
+    }
+
+    p {
+      color: #1f2732;
+      font-size: 36px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+    }
+  }
+
+  .widget_search {
+    margin: 38px 0 31px;
+  }
+}
+
+@media (min-width: 992px) {
+  .error-404 .page-header h3 {
+    font-size: 238px;
+  }
+}
+
+.page_404 .page-header {
+  align-items: flex-end;
+  -webkit-box-align: end;
+  -webkit-box-pack: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: end;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 490px;
+  width: 100%;
+}
+
+@media (max-width: 991px) {
+  .page_404 .page-header {
+    min-height: 400px;
+  }
+}

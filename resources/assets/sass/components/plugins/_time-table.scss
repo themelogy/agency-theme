@@ -1,0 +1,42 @@
+/*
+** Time Table
+*/
+
+#timetable {
+  span {
+    display: block;
+  }
+
+  th, td {
+    font-weight: normal;
+    padding: 25px 5px;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  thead {
+    color: #fff;
+
+    th {
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-width: 0 1px;
+    }
+  }
+
+  tbody {
+    th, td {
+      border: 1px solid #e1e1e1;
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .current {
+      background-color: $color-primary;
+      border-color: $color-primary;
+
+      a {
+        color: #fff;
+      }
+    }
+  }
+}

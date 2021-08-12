@@ -1,0 +1,199 @@
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  line-height: 30px;
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+
+h1 {
+  font-size: 56px;
+  line-height: 50px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 42px;
+}
+
+h4 {
+  font-size: 36px;
+}
+
+h5 {
+  font-size: 30px;
+}
+
+h6 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+@media (max-width: 991px) {
+  h6 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  h4 {
+    font-size: 1.3rem;
+  }
+
+  h5 {
+    font-size: 1.2rem;
+  }
+
+  h6 {
+    font-size: 1.1rem;
+  }
+}
+
+h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child {
+  margin-top: 0;
+}
+
+h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:last-child {
+  margin-bottom: 0;
+}
+
+
+
+p {
+  margin-bottom: 10px;
+}
+
+ul:last-child, ol:last-child {
+  margin-bottom: 0;
+}
+
+p:last-child {
+  margin-bottom: 0;
+
+  &:after {
+    clear: both;
+    content: "";
+    display: block;
+  }
+}
+
+img, figure {
+  height: auto;
+  max-width: 100%;
+}
+
+figcaption {
+  font-size: 0.95em;
+  line-height: 1.4;
+  padding: 10px 0 7px;
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+b, strong {
+  font-weight: 600;
+}
+
+
+
+/* small in headings */
+
+.h1 {
+  .small, small {
+    color: inherit;
+    font-weight: 300;
+  }
+}
+
+.h2 {
+  .small, small {
+    color: inherit;
+    font-weight: 300;
+  }
+}
+
+.h3 {
+  .small, small {
+    color: inherit;
+    font-weight: 300;
+  }
+}
+
+.h4 {
+  .small, small {
+    color: inherit;
+    font-weight: 300;
+  }
+}
+
+.h5 {
+  .small, small {
+    color: inherit;
+    font-weight: 300;
+  }
+}
+
+.h6 {
+  .small, small {
+    color: inherit;
+    font-weight: 300;
+  }
+}
+
+h1 {
+  .small, small {
+    color: inherit;
+    font-weight: 300;
+  }
+}
+
+h2 {
+  .small, small {
+    color: inherit;
+    font-weight: 300;
+  }
+}
+
+h3 {
+  .small, small {
+    color: inherit;
+    font-weight: 300;
+  }
+}
+
+h4 {
+  .small, small {
+    color: inherit;
+    font-weight: 300;
+  }
+}
+
+h5 {
+  .small, small {
+    color: inherit;
+    font-weight: 300;
+  }
+}
+
+h6 {
+  .small, small {
+    color: inherit;
+    font-weight: 300;
+  }
+}

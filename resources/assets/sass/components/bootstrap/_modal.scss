@@ -1,0 +1,16 @@
+.modal-open {
+  padding-right: 0 !important;
+}
+
+.modal-backdrop.show {
+  background-color: #4d4d4d;
+  opacity: 0.9;
+}
+
+.modal-content {
+  border-radius: 1px;
+
+  [class*="col-"]:last-child {
+    margin-bottom: 0;
+  }
+}

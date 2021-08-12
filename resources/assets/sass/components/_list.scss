@@ -1,0 +1,154 @@
+
+ul, ol {
+  padding-left: 1.15rem;
+}
+
+dt {
+  font-weight: 700;
+}
+
+dd {
+  margin: 0 1.5em 1.5em;
+}
+
+.list-bordered {
+  list-style: none;
+  overflow: hidden;
+  padding: 0;
+
+  li {
+    border-bottom: 1px solid #e1e1e1;
+    border-top: 1px solid #e1e1e1;
+    padding-bottom: 15px;
+    padding-top: 14px;
+
+    + li {
+      border-top: none;
+    }
+  }
+
+  &.no-top-border > li:first-child {
+    border-top: none;
+  }
+
+  &.no-bottom-border > li:last-child {
+    border-bottom: none;
+  }
+}
+
+ul.list {
+  padding-right: 2rem;
+
+  .list-styled ul, ul.list-styled {
+    color: #323232;
+    list-style: none;
+    padding: 0;
+  }
+
+  .list-styled ul li, ul.list-styled li {
+    padding-left: 20px;
+    position: relative;
+  }
+
+  .list-styled ul li:before, ul.list-styled li:before {
+    color: $color-primary;
+    content: "\f054";
+    font-family: "FontAwesome", serif;
+    font-size: 10px;
+    padding-right: 15px;
+    position: relative;
+    top: -2px;
+  }
+}
+
+.list {
+  li {
+    border-bottom: 1px solid #e1e1e1;
+    border-top: 1px solid #e1e1e1;
+    list-style: none;
+    padding-bottom: 15px;
+    padding-top: 14px;
+
+    :before {
+      color: $color-primary;
+      content: "\f111";
+      font-family: "FontAwesome", serif;
+      font-size: 5px;
+      padding-right: 15px;
+      position: relative;
+      top: -2px;
+    }
+
+    + li {
+      border-top: none;
+    }
+  }
+
+  &.no-top-border > li:first-child {
+    border-top: none;
+  }
+
+  &.no-bottom-border > li:last-child {
+    border-bottom: none;
+  }
+}
+
+.list1 li {
+  color: #1f2732;
+  font-weight: 400;
+  list-style: none;
+  padding: 5px 0 5px 5px;
+
+  &:before {
+    color: $color-primary;
+    content: "\f111";
+    font-family: "FontAwesome", serif;
+    font-size: 5px;
+    padding-right: 15px;
+    position: relative;
+    top: -2px;
+  }
+}
+
+ul.list1 {
+  padding-left: 0;
+}
+
+ol.list3 {
+  counter-reset: li;
+  list-style: none outside none;
+  padding: 0;
+
+  li {
+    color: #1f2732;
+    padding: 4px 0 4px 38px;
+    position: relative;
+
+    &:after {
+      color: $color-primary;
+      content: counter(li, decimal-leading-zero);
+      counter-increment: li;
+      font-weight: 500;
+      left: 2px;
+      line-height: 30px;
+      margin-top: -15px;
+      position: absolute;
+      text-align: center;
+      top: 50%;
+    }
+  }
+}
+
+.wrap ol {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+}
+
+@media (max-width: 767px) {
+  .wrap ol {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+  }
+}

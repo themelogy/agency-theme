@@ -1,0 +1,378 @@
+
+/*
+** WordPress Required
+*/
+
+.alignnone {
+  margin: 10px 0 30px;
+}
+
+.aligncenter, div.aligncenter {
+  display: block;
+  margin: 10px auto 30px auto;
+}
+
+.alignright {
+  float: right;
+  margin: 10px 0 30px 40px;
+  max-width: 50%;
+}
+
+.alignleft {
+  float: left;
+  margin: 10px 40px 30px 0;
+  max-width: 50%;
+}
+
+a img {
+  &.alignright {
+    float: right;
+    margin: 10px 0 30px 40px;
+  }
+
+  &.alignnone {
+    margin: 10px 0 30px;
+  }
+
+  &.alignleft {
+    float: left;
+    margin: 10px 40px 30px 0;
+  }
+
+  &.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.wp-caption {
+  text-align: center;
+
+  &.alignnone, &.alignleft {
+    margin: 5px 20px 20px 0;
+  }
+
+  &.alignright {
+    margin: 5px 0 20px 20px;
+  }
+
+  img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+  }
+
+  p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+  }
+}
+
+/* Text meant only for screen readers. */
+
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  white-space: nowrap;
+  width: 1px;
+
+  &:focus {
+    clip: auto !important;
+    display: block;
+    font-weight: bold;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+
+    /* Above WP toolbar. */
+  }
+}
+
+.sticky, .bypostauthor {
+  position: relative;
+}
+
+/*
+** WordPress Page Links and Pagination
+*/
+
+.page-item, .nav-links, .page-links {
+  clear: both;
+}
+
+.page-item > {
+  span, a {
+    background-color: #fff;
+    border: 4px solid #f4f4f5;
+    border-radius: 50% !important;
+    color: #1f2732;
+    display: inline-block;
+    line-height: inherit;
+    margin-left: 0;
+    margin-right: 4px;
+    min-width: 3em;
+    padding: 0.5em 1.2em;
+    text-align: center;
+  }
+}
+
+.nav-links > {
+  span, a {
+    background-color: #fff;
+    border: 4px solid #f4f4f5;
+    border-radius: 50% !important;
+    color: #1f2732;
+    display: inline-block;
+    line-height: inherit;
+    margin-left: 0;
+    margin-right: 4px;
+    min-width: 3em;
+    padding: 0.5em 1.2em;
+    text-align: center;
+  }
+}
+
+.page-links > {
+  span, a {
+    background-color: #fff;
+    border: 4px solid #f4f4f5;
+    border-radius: 50% !important;
+    color: #1f2732;
+    display: inline-block;
+    line-height: inherit;
+    margin-left: 0;
+    margin-right: 4px;
+    min-width: 3em;
+    padding: 0.5em 1.2em;
+    text-align: center;
+  }
+}
+
+.page-item > {
+  span:hover, a:hover {
+    background-color: $color-primary;
+    border: 4px solid $color-primary;
+    color: #fff;
+  }
+}
+
+.nav-links > {
+  span:hover, a:hover {
+    background-color: $color-primary;
+    border: 4px solid $color-primary;
+    color: #fff;
+  }
+}
+
+.page-links > {
+  span:hover, a:hover {
+    background-color: $color-primary;
+    border: 4px solid $color-primary;
+    color: #fff;
+  }
+}
+
+.page-item {
+  &.active > a, > span {
+    background-color: #1f2732 !important;
+    border: 4px solid #1f2732;
+    color: #fff;
+    cursor: not-allowed;
+  }
+}
+
+.nav-links {
+  &.active > a, > span {
+    background-color: #1f2732 !important;
+    border: 4px solid #1f2732;
+    color: #fff;
+    cursor: not-allowed;
+  }
+}
+
+.page-links {
+  &.active > a, > span {
+    background-color: #1f2732 !important;
+    border: 4px solid #1f2732;
+    color: #fff;
+    cursor: not-allowed;
+  }
+}
+
+.page-item {
+  &.active > a:hover, > span:hover {
+    border: 4px solid #1f2732;
+  }
+}
+
+.nav-links {
+  &.active > a:hover, > span:hover {
+    border: 4px solid #1f2732;
+  }
+}
+
+.page-links {
+  &.active > a:hover, > span:hover {
+    border: 4px solid #1f2732;
+  }
+}
+
+.page-item .fa, .nav-links .fa {
+  font-size: 10px;
+}
+
+.page-links {
+  .fa {
+    font-size: 10px;
+  }
+
+  a:first-child {
+    margin-left: 1em;
+  }
+}
+
+.pagination {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+@media (max-width: 767px) {
+  .pagination {
+    margin-top: 20px;
+  }
+}
+
+.post-nav {
+  margin: 30px 0 0;
+  position: relative;
+
+  .nav-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+    > div {
+      height: auto;
+      padding: 60px;
+      position: relative;
+      text-align: right;
+      -webkit-transition: 0.2s opacity ease;
+      transition: 0.2s opacity ease;
+      width: 48.6%;
+
+      &:hover {
+        opacity: 0.9;
+      }
+
+      .fa {
+        font-size: 20px;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+      }
+
+      &:first-child {
+        text-align: left;
+
+        .fa {
+          left: 0;
+          right: auto;
+        }
+      }
+    }
+
+    .nav-subtitle {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      line-height: 1.6em;
+      min-width: 8em;
+      padding: 0.25em 1em 0.05em;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .nav-title {
+      color: #fff;
+      display: block;
+      font-weight: 500;
+      line-height: 20px;
+      margin-top: 8px;
+    }
+
+    a {
+      bottom: 0;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+
+  .post-nav-image {
+    display: none;
+  }
+
+  .cover-image .post-nav-text-wrap {
+    text-align: center;
+  }
+}
+
+@media (max-width: 575px) {
+  .post-nav .nav-links > div {
+    width: 100%;
+  }
+}
+
+.prev.page-numbers, .next.page-numbers {
+  background-color: $color-primary;
+  border: 4px solid $color-primary;
+  color: #fff;
+
+  &:hover {
+    background-color: #1f2732;
+    border: 4px solid #1f2732;
+    color: #fff;
+  }
+}
+
+.nav-links .active:hover {
+  border: 4px solid $color-primary;
+}
+
+.next {
+  margin-left: 20px;
+}
+
+@media (max-width: 767px) {
+  .next {
+    margin: 20px 0 0;
+  }
+}
+
+.navigation.post-nav .s-overlay.ds {
+  background-color: #000;
+}

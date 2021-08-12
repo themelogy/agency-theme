@@ -1,0 +1,120 @@
+[data-toggle="collapse"] {
+  display: inline-block;
+  margin-bottom: 18px;
+  padding-right: 20px;
+  position: relative;
+
+  &:after {
+    content: "-";
+    font-family: "FontAwesome";
+    font-size: 16px;
+    height: 60px;
+    position: absolute;
+    right: 100%;
+    top: 0;
+    width: 20px;
+  }
+
+  &.collapsed:after {
+    content: "+";
+  }
+}
+
+[role="tablist"] {
+  .card {
+    background: none;
+    border: none;
+    border-radius: 0;
+  }
+
+  .card-header {
+    background: none;
+    border: none;
+    padding: 0;
+
+    a {
+      background-color: $color-primary;
+      border-radius: 30px;
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+      color: #fff;
+      display: block;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      line-height: 1.6em;
+      padding: 21px 50px 21px 30px;
+      position: relative;
+      text-transform: uppercase;
+      word-wrap: break-word;
+
+      &:before {
+        background-color: transparent;
+        bottom: 0;
+        color: #fff;
+        content: "";
+        font-family: inherit;
+        font-size: 12px;
+        font-weight: 500;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        top: 0;
+        -webkit-transition: opacity 0.3s ease-in-out;
+        transition: opacity 0.3s ease-in-out;
+        width: 60px;
+      }
+
+      &:after {
+        background-color: transparent;
+        bottom: 0;
+        color: #fff;
+        content: "";
+        font-family: inherit;
+        font-size: 12px;
+        font-weight: 500;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        top: 0;
+        -webkit-transition: opacity 0.3s ease-in-out;
+        transition: opacity 0.3s ease-in-out;
+        width: 60px;
+        background: none;
+        bottom: auto;
+        content: "-";
+        height: 30px;
+        line-height: 30px;
+        margin-top: -18px;
+        top: 50%;
+        vertical-align: top;
+      }
+
+      &:hover {
+        color: #fff;
+        opacity: 1;
+      }
+
+      &.collapsed {
+        background-color: #1f2732;
+        color: #fff;
+
+        &:hover {
+          background-color: $color-primary;
+        }
+
+        &:after {
+          content: "+";
+          margin-top: -15px;
+        }
+      }
+    }
+  }
+
+  .card-body {
+    padding: 10px 30px 31px;
+  }
+
+  .media img {
+    max-width: 80px;
+  }
+}

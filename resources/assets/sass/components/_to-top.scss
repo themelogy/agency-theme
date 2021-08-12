@@ -1,0 +1,61 @@
+
+/*
+** toTop
+*/
+
+#toTop {
+  background-color: $color-primary;
+  border-radius: 50%;
+  bottom: 10px;
+  color: transparent;
+  font-size: 0;
+  height: 50px;
+  opacity: 0.7;
+  overflow: hidden;
+  position: fixed;
+  right: 10px;
+  text-decoration: none;
+  width: 50px;
+  z-index: 9999;
+
+  &:after {
+    bottom: 0;
+    color: #fff;
+    content: "\f106";
+    display: block;
+    font-family: "FontAwesome";
+    font-size: 16px;
+    left: 0;
+    line-height: 47px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+  }
+}
+
+#toTopHover {
+  bottom: 3px;
+  opacity: 1;
+}
+
+#toTop {
+  &:hover {
+    bottom: 3px;
+    opacity: 1;
+
+    &:after {
+      color: #fff;
+    }
+  }
+
+  &:active, &:focus {
+    outline: medium none;
+  }
+}
+
+.modal-open #toTop {
+  visibility: hidden;
+}

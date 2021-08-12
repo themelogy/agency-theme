@@ -1,0 +1,10 @@
+
+.carousel-item.active, .carousel-item-next, .carousel-item-prev {
+  display: block;
+}
+
+.carousel-indicators li {
+  border-radius: 50%;
+  height: 10px;
+  max-width: 10px;
+}

@@ -1,0 +1,18 @@
+.progress {
+  background-color: #fff;
+  border-radius: 1px;
+  height: 4px;
+
+  + .progress {
+    margin-top: 10px;
+  }
+
+  [data-transitiongoal] {
+    width: 0;
+  }
+
+  .progress-bar {
+    -webkit-transition: width 0.5s ease 0.2s;
+    transition: width 0.5s ease 0.2s;
+  }
+}
